@@ -58,7 +58,6 @@ searchForm.addEventListener("submit", event => {
             message: "The search field cannot be empty!",
             position: "topCenter"
         });
-        window.alert("")
         return
     }
 
