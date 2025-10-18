@@ -53,7 +53,12 @@ searchForm.addEventListener("submit", event => {
     const searchInput = form.elements["search-text"].value.trim()
 
     if (searchInput === "") {
-        window.alert("The search field cannot be empty!")
+        iziToast.error({
+            title: "Error!",
+            message: "The search field cannot be empty!",
+            position: "topCenter"
+        });
+        window.alert("")
         return
     }
 
